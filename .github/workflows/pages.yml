@@ -1,0 +1,33 @@
+name: Deploy WARDLINE INDIA to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: wardline-india-pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/main' && vars.WARDLINE_PAGES_APPROVED == 'true'
+    uses: ./.github/workflows/ci.yml
+    with:
+      upload_pages: true
+    permissions:
+      contents: read
+      pages: read
+  deploy:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

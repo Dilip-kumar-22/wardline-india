@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use WARDLINE INDIA in academic or research work, please cite this software and the underlying MoHFW HMIS Zenodo derivative."
+title: "WARDLINE INDIA: Indian Healthcare Utilization Intelligence"
+version: "1.4.2"
+date-released: "2026-11-24"
+license: MIT
+authors:
+  - name: "WARDLINE INDIA Project Team"
+references:
+  - type: dataset
+    title: "El Niño and essential health services in India: HMIS state-month panel, code, results contract and aggregate data"
+    version: "v1.0.1"
+    year: 2026
+    doi: "10.5281/zenodo.23657569"
+    url: "https://doi.org/10.5281/zenodo.23657569"
+    license: CC-BY-4.0
+    authors:
+      - family-names: "Siddalingaiah"
+        given-names: "H S"

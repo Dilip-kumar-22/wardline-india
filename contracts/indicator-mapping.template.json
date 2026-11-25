@@ -1,0 +1,19 @@
+{
+  "status": "unverified_template",
+  "source_id": null,
+  "source_resource_id": null,
+  "original_indicator_label": null,
+  "official_definition": null,
+  "definition_url": null,
+  "normalized_indicator_id": null,
+  "unit": null,
+  "period_kind": null,
+  "facility_scope": null,
+  "geo_level": null,
+  "source_columns": {},
+  "missing_markers": [],
+  "suppressed_markers": [],
+  "aggregation_rules": null,
+  "revision_policy": null,
+  "notes": "Fill from actual official file; do not assume IPD attendance equals admissions. Null means not verified."
+}
